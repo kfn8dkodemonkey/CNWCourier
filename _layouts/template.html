@@ -1,0 +1,60 @@
+
+{% include header.html %}
+
+<!-- banner and call to action -->
+<section id="banner">
+  {% if page.title != "Contact Us" %}
+    <div class="row">
+      <div class="col-7 text-center d-none d-lg-block">
+        {% if page.title == "Health Care" %}
+          <img src="{{site.url}}/assets/images/healthcare.jpg" class="img-fluid"/>
+        {% elsif page.title == "Local Services" %}
+          <img src="{{site.url}}/assets/images/Local-Services2.jpg" class="img-fluid"/>
+        {% elsif page.title == "Commercial & Industrial" %}
+          <img src="{{site.url}}/assets/images/frontline-worker-industry-graphic.png" class="img-fluid ml-5 pl-5" style="width:53%; height:auto"/>
+        {% endif %}
+      </div>
+      <div class="col max-auto p-5 d-none d-md-block">
+        {% include Get-Quote.html %}
+      </div>
+      <div class="col max-auto text-center pt-3 pb-3 pr-5 d-sm-block d-md-none">
+        <a href="{{site.url}}/Get-Quote" class="btn btn-lg btn-orange align-middle">Get A Quote</a>
+      </div>
+    </div>
+  {% else %}
+    <div class="row">
+      <div class="col">
+        <img src="{{site.url}}/assets/images/GM-placeholder.png" class="img-fluid"/ style="width:100%; height:auto;">
+      </div>
+    </div>
+  {% endif %}
+</section>
+
+<main role="main" class="border-top border-bottom border-secondary">
+  <section id="main-content" class="mb-3">
+    <div class="row">
+      <div class="col ml-3">
+        {% if page.title == "Client Spotlight" %}
+          <h1>This months Client Spotlight:</h1>
+        {% else %}
+          <h1>{{page.title}}</h1>
+        {% endif %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {{ content }}
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- <article  class="border-bottom border-light">
+  <section id="spotlight">
+    {% comment %}
+      {% include spotlight.html %}
+    {% endcomment %}
+  </section>
+</article> -->
+
+{% include footer.html %}

@@ -1,0 +1,119 @@
+
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 9.5rem;
+  overflow-x: hidden;
+}
+
+/***** Navbar *****/
+.fixed-top {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+nap-bar{
+  background: #ccbfb7;
+  position: fixed;
+  top:0;
+  right: 0;
+  left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  z-index: 1030;
+}
+
+/***** end navbar *****/
+/***** Main Contet *****/
+#banner {
+  position: fixed;
+  top:9.5rem;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+main {
+  margin-top: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  min-height: 25rem;
+  background-color: /*#dd8d37;*/ #ccbfb7;
+  position: relative;
+  z-index: 9;
+}
+@media (min-width: 576px) {
+  main {
+    margin-top: 35rem;
+  }
+
+}
+
+article {
+  background-color: #f4f6f7;
+  min-height: 15rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+footer {
+  /*background-color: #343a40;*/
+  min-height: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 9;
+}
+
+footer a{
+  color: #e2e4e7;
+}
+
+footer a:hover, footer a:focus {
+  color: #dd8d37;
+}
+/***** Special Featuers ******/
+.vertical-divider {
+  border-right: 2px solid #0e304e;
+}
+
+.btn-orange {
+  color: #0e304e;
+  background-color: #d88022;
+  border-color: #c4855c;
+}
+.btn-orange:hover {
+    color: #fff;
+    background-color: #bc530d;
+    border-color: #c4855c;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2f5b7f;
+  border-color: #0b2d4a;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b2d4a;
+    border-color: #0b2d4a;
+}
+
+.text-orange {
+  color: #bc530d;
+}
+
+.logo {
+  background-size: contain;
+  height: 4rem;
+}
+
+a.text-secondary:focus, a.text-secondary:hover {
+
+    color: #bc530d !important;
+
+}

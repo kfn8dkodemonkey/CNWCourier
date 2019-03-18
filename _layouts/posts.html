@@ -1,0 +1,25 @@
+---
+layout: template
+---
+<div class="row ml-3">
+  <div class="col">
+    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+  </div>
+<div>
+
+<div class="row ml-5">
+  <div class="col-md-7 offset-md-2">
+    {{ content }}
+  </div>
+  <div class="col-md-2 ml-5">
+    <h2>Past Spotlight's</h2>
+    <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  </div>
+</div>
