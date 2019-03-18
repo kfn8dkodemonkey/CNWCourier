@@ -2,7 +2,7 @@
   <!-- Location Map -->
   <section id="location" class="m-3">
     <div class="row">
-      <div class="col"><!-- col 1 -->
+      <div class="col-6"><!-- col 1 -->
           <div class="row no-gutters">
             <div class="col-md-4  mt-4 mb-1">
               <a href="/assets/images/GoogleMaps.png" target="_blank"><img src="assets/images/GoogleMaps.png" class="card-img bg-white" alt="Service Area"></a>
@@ -16,43 +16,52 @@
             </div>
           </div>
       </div>
+
+      <!-- Force next columns to break to new line at md breakpoint and lower -->
+      <div class="w-100 d-md-none"></div>
+
       <div class="col"><!-- col 2 -->
         <div class="card-body">
-          <h5 class="text-center">Site Map</h5>
+          <h5>Site Map</h5>
           <div class="row">
             <div class="col card-text">
               <ul>
                 <li><a href="/" class="text-secondary">Home</a></li>
+                <li><a href="{{site.url}}/Contact-Us" class="text-secondary">Contact Us</a></li>
                 <!-- <li><a href="Health-Care"class="text-secondary" >Health Care</a></li>
                 <li><a href="Local-Services" class="text-secondary">Local Services</a></li> -->
               </ul>
             </div>
-            <div class="col card-text">
+            <!--   <div class="col card-text">
               <ul>
-                <!-- <li><a href="Commercial-Industrial"class="text-secondary" >Commercial & Industrial</a></li>
-                <li><a href="{{site.url}}/Client-Spotlight" >Client Spotlight</a></li> -->
-                <li><a href="{{site.url}}/Contact-Us" class="text-secondary">Contact Us</a></li>
+              <li><a href="Commercial-Industrial"class="text-secondary" >Commercial & Industrial</a></li>
+                <li><a href="{{site.url}}/Client-Spotlight" >Client Spotlight</a></li>
+
               </ul>
-            </div>
+            </div> -->
           </div>
         </div><!-- end card 2 -->
       </div>
+
+      <!-- Force next columns to break to new line at md breakpoint and lower -->
+      <div class="w-100 d-md-none"></div>
+
       <div class="col"><!-- col 3 -->
         <div class="card-body">
-          <h5 class="text-center">Media News</h5>
+          <h5 class="text-left">Media News</h5>
           <div class="row">
-            <div class="col text-right">
+            <div class="col">
               <ul class="list-unstyled">
                 <li><i class="fab fa-facebook-square" alt="Facebook"></i></li>
               </ul>
             </div>
-            <div class="col text-center">
+            <div class="col">
               <ul class="list-unstyled">
                 <li><i class="fab fa-instagram" alt="Instagram"></i></li>
 
               </ul>
             </div>
-            <div class="col text-left">
+            <div class="col">
               <ul class="list-unstyled">
                 <li><i class="fab fa-twitter-square" alt="Twitter"></i></li>
               </ul>
