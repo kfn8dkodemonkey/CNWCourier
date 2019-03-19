@@ -14,14 +14,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Colorado Northwest Courier
-email: info@cnw-courier.com
+email: info@cnwcourier.com
 description: >- # this means to ignore newlines until "baseurl:"
   Serving the grater Colorado Western Slopes and the Uinta Basin.
+<<<<<<< HEAD
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cnw-courier.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: CNWCourier
 facebook: CNWCourier
 instagram: CNWCourier
+=======
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://cnwcourier.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+facebook: CNWCourier-407136966686736
+>>>>>>> master
 
 # Build settings
 markdown: kramdown

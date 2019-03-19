@@ -1,35 +1,36 @@
 
-<h1 class="text-center">Get a Qute from your Local Courier!</h1>
+<h1 class="text-center">Get a Quote from your Local Courier!</h1>
 
-<form action="http://formspree.io/co.nwcourier@gmail.com?subject=Get A Quote" method="post" enctype="text/plain">
+<form action="https://formspree.io/co.nwcourier@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Get A Quote!" />
   <div  class="form-row">
     <div class="form-group col-md-6">
-      <label for="contact">Contact Name:</label>
-      <input type="text" class="form-control" id="contact" placeholder="Contact Name">
+      <label for="contact"><span class="text-danger">*</span>  Contact Name:</label>
+      <input type="text" name="name" class="form-control" id="contact" placeholder="Contact Name" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="company">Company:</label>
-      <input type="text" class="form-control" id="company" placeholder="Company">
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="email">Contact Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Contact Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="phone">Contact Phone:</label>
-      <input type="phone" class="form-control" id="phone" placeholder="Phone">
+      <label for="company"><span class="text-danger">*</span> Company:</label>
+      <input type="text" name="company" class="form-control" id="company" placeholder="Company" required>
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">Pick-Up City:</label>
-      <input type="text" class="form-control" id="inputCity">
+      <label for="email"><span class="text-danger">*</span> Contact Email:</label>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Contact Email" required>
     </div>
     <div class="form-group col-md-6">
-      <label for="area">Service Area:</label>
-      <select id="area" class="form-control">
+      <label for="phone"><span class="text-danger">*</span> Contact Phone:</label>
+      <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="city"><span class="text-danger">*</span> Pick-Up City:</label>
+      <input type="text" name="city" class="form-control" id="city" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="area"><span class="text-danger">*</span> Service Area:</label>
+      <select id="area" name="service-area" class="form-control" required>
         <option selected>Select</option>
         <option>Local</option>
         <option>Extended-Local</option>
@@ -39,8 +40,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="textarea">Message:</label>
-    <textarea class="form-control" id="textarea" rows="3"></textarea>
+    <label for="message"><span class="text-danger">*</span> Message:</label>
+    <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
   </div>
   <button type="submit" class="btn btn-orange">Get A Quote</button>
 </form>

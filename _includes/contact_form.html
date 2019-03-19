@@ -1,54 +1,63 @@
 <h3>General Inquies</h3>
-<form action="http://formspree.io/co.nwcourier@gmail.com?subject=Inquies" method="post" enctype="text/plain">
+<form action="https://formspree.io/co.nwcourier@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="Inquies" />
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="contact">Contact Name:</label>
-      <input type="text" class="form-control" id="contact" placeholder="Contact Name">
+      <label for="contact"><span class="text-danger">*</span> Contact Name:</label>
+      <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact Name" required>
     </div>
+
+    <!-- Force next columns to break to new line at md breakpoint and lower -->
+    <div class="w-100 d-md-none"></div>
+
     <div class="form-group col-md-6">
       <label for="company">Company:</label>
-      <input type="text" class="form-control" id="company" placeholder="Company">
+      <input type="text" class="form-control" name="company" id="company" placeholder="Company">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="email">Contact Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Contact Email">
+      <label for="email"><span class="text-danger">*</span> Contact Email:</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Contact Email" required>
     </div>
+
+    <!-- Force next columns to break to new line at md breakpoint and lower -->
+    <div class="w-100 d-md-none"></div>
+
     <div class="form-group col-md-6">
       <label for="phone">Phone</label>
-      <input type="phone" class="form-control" id="phone" placeholder="Phone">
+      <input type="phone" class="form-control" name="phone" id="phone" placeholder="Phone">
     </div>
   </div>
   <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" name="address" id="address" placeholder="1234 Main St">
   </div>
   <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <label for="address2">Address 2</label>
+    <input type="text" class="form-control" name="address2" id="address2" placeholder="Apartment, studio, or floor">
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
+      <label for="city">City</label>
+      <input type="text" class="form-control" name="city" id="city">
     </div>
     <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
+      <label for="state">State</label>
+      <select name="state" id="state" class="form-control">
         <option selected>Select</option>
         <option>Colorado</option>
         <option>Utah</option>
       </select>
     </div>
     <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
+      <label for="zip">Zip</label>
+      <input type="text" class="form-control" name="zip" id="zip">
     </div>
   </div>
   <div class="form-group">
-    <label for="textarea">Message:</label>
-    <textarea class="form-control" id="textarea" rows="3"></textarea>
+    <label for="message"><span class="text-danger">*</span> Message:</label>
+    <textarea class="form-control" name="message"id="message" rows="3" required></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
