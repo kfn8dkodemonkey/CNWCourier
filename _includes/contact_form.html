@@ -3,8 +3,8 @@
   <input type="hidden" name="_subject" value="Inquies" />
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="contact">Contact Name:</label>
-      <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact Name">
+      <label for="contact"><span class="text-danger">*</span> Contact Name:</label>
+      <input type="text" class="form-control" name="contact" id="contact" placeholder="Contact Name" required>
     </div>
 
     <!-- Force next columns to break to new line at md breakpoint and lower -->
@@ -17,8 +17,8 @@
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="email">Contact Email:</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="Contact Email">
+      <label for="email"><span class="text-danger">*</span> Contact Email:</label>
+      <input type="email" class="form-control" name="email" id="email" placeholder="Contact Email" required>
     </div>
 
     <!-- Force next columns to break to new line at md breakpoint and lower -->
@@ -56,8 +56,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="message">Message:</label>
-    <textarea class="form-control" name="message"id="message" rows="3"></textarea>
+    <label for="message"><span class="text-danger">*</span> Message:</label>
+    <textarea class="form-control" name="message"id="message" rows="3" required></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
