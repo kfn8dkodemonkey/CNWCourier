@@ -46,12 +46,14 @@ main {
   position: relative;
   z-index: 9;
 }
-@media (min-width: 576px) {
+
+@media (min-width: 480px) {
   main {
     margin-top: 38rem;
   }
-
 }
+
+
 
 article {
   background-color: #f4f6f7;
