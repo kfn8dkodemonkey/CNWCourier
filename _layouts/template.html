@@ -3,7 +3,7 @@
 
 <!-- banner and call to action -->
 <section id="banner">
-  {% if page.title != "Contact Us" %}
+  {% if page.category != "form" %}
     <div class="row">
       <div class="col-7 text-center d-none d-lg-block">
         {% if page.title == "Health Care" %}
@@ -15,7 +15,11 @@
         {% endif %}
       </div>
       <div class="col max-auto p-5 d-none d-md-block">
-        {% include Get-Quote.html %}
+        <h1 class="mt-5 pt-5">Local Courier-Hot Shot</h1>
+        <h2>Same day or Next day Service</h2>
+
+        <a href="Get-Quote" class="btn btn-lg btn-orange align-middle mt-4">Get A Quote</a>
+        <a href="Contact-Us" class="btn btn-lg btn-orange align-middle mt-4">Contact Us</a>
       </div>
       <div class="col max-auto text-center pt-3 pb-3 pr-5 d-sm-block d-md-none">
         <a href="{{site.url}}/Get-Quote" class="btn btn-lg btn-orange align-middle">Get A Quote</a>
@@ -24,7 +28,7 @@
   {% else %}
     <div class="row">
       <div class="col">
-        <img src="{{site.url}}/assets/images/GoogleMaps.png" class="img-fluid"/ style="width:100%; height:auto;">
+        <img src="{{site.url}}/assets/images/GoogleMaps.png" class="img-fluid" style="width:100%; height:auto;">
       </div>
     </div>
   {% endif %}

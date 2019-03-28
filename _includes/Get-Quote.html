@@ -1,47 +1,81 @@
 
-<h1 class="text-center">Get a Quote from your Local Courier!</h1>
-
+<h1 class="text-center">Your Local Courier - Hot Shot Serivce</h1>
+&nbsp;
 <form action="https://formspree.io/co.nwcourier@gmail.com" method="POST">
   <input type="hidden" name="_subject" value="Get A Quote!" />
-  <div  class="form-row">
-    <div class="form-group col-md-6">
-      <label for="contact"><span class="text-danger">*</span>  Contact Name:</label>
-      <input type="text" name="name" class="form-control" id="contact" placeholder="Contact Name" required>
+  <fieldset>
+    <legend>Contact Information</legend>
+    <div  class="form-row">
+      <div class="form-group col-md-6">
+        <label for="contact"><span class="text-danger">*</span>  Contact Name:</label>
+        <input type="text" name="name" class="form-control" id="contact" placeholder="Contact Name" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="company"><span class="text-danger">*</span> Company:</label>
+        <input type="text" name="company" class="form-control" id="company" placeholder="Company" required>
+      </div>
     </div>
-    <div class="form-group col-md-6">
-      <label for="company"><span class="text-danger">*</span> Company:</label>
-      <input type="text" name="company" class="form-control" id="company" placeholder="Company" required>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="email"><span class="text-danger">*</span> Contact Email:</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Contact Email" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="phone"><span class="text-danger">*</span> Contact Phone:</label>
+        <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+      </div>
     </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="email"><span class="text-danger">*</span> Contact Email:</label>
-      <input type="email" name="email" class="form-control" id="email" placeholder="Contact Email" required>
+  </fieldset>
+  <fieldset>
+    <legend>Origin Location:</legend>
+    <div  class="form-row">
+      <div class="form-group col-md-6">
+        <label for="o-address"><span class="text-danger">*</span>  Address:</label>
+        <input type="text" name="o-address" class="form-control" id="-o-address" placeholder="Origin Address" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="o-city"><span class="text-danger">*</span>  City:</label>
+        <input type="text" name="o-city" class="form-control" id="o-city" placeholder="Origin City" required>
+      </div>
     </div>
-    <div class="form-group col-md-6">
-      <label for="phone"><span class="text-danger">*</span> Contact Phone:</label>
-      <input type="phone" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+    <div  class="form-row">
+      <div class="form-group col-md-6">
+        <label for="o-state"><span class="text-danger">*</span>  State:</label>
+        <input type="text" name="o-state" class="form-control" id="o-state" placeholder="Origin State" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="o-zip"><span class="text-danger">*</span>  Zip-Code:</label>
+        <input type="text" name="o-zip" class="form-control" id="o-ip" placeholder="Origin Zip-Code" required>
+      </div>
     </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="city"><span class="text-danger">*</span> Pick-Up City:</label>
-      <input type="text" name="city" class="form-control" id="city" required>
+  </fieldset>
+  <fieldset>
+    <legend>Delivery Location:</legend>
+    <div  class="form-row">
+      <div class="form-group col-md-6">
+        <label for="d-address"><span class="text-danger">*</span>  Address:</label>
+        <input type="text" name="d-address" class="form-control" id="d-address" placeholder="Delivery Address" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="d-city"><span class="text-danger">*</span>  City:</label>
+        <input type="text" name="d-city" class="form-control" id="d-city" placeholder="Delivery City" required>
+      </div>
     </div>
-    <div class="form-group col-md-6">
-      <label for="area"><span class="text-danger">*</span> Service Area:</label>
-      <select id="area" name="service-area" class="form-control" required>
-        <option selected>Select</option>
-        <option>Local</option>
-        <option>Extended-Local</option>
-        <option>Regional</option>
-        <option>Regional-Rush</option>
-      </select>
+    <div  class="form-row">
+      <div class="form-group col-md-6">
+        <label for="d-state"><span class="text-danger">*</span>  State:</label>
+        <input type="text" name="d-state" class="form-control" id="d-state" placeholder="Delivery State" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="d-zip"><span class="text-danger">*</span>  Zip-Code:</label>
+        <input type="text" name="d-zip" class="form-control" id="d-zip" placeholder="Delivery Zip-Code" required>
+      </div>
     </div>
-  </div>
+  </fieldset>
+
   <div class="form-group">
-    <label for="message"><span class="text-danger">*</span> Message:</label>
-    <textarea name="message" class="form-control" id="message" rows="3" required></textarea>
+    <label for="message"> Message:</label>
+    <textarea name="message" class="form-control" id="message" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-orange">Get A Quote</button>
 </form>
